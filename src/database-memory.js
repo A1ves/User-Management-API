@@ -17,6 +17,15 @@ export class DatabaseMemoryUser {
         return null
     }
 
+    findUserByEmail(email) {
+        for (let user of this.#users.values()) {
+          if (user.email === email) {
+            return user;
+          }
+        }
+        return null;
+    }
+
     list(){
         return Array.from(this.#users.entries()).map((eventArray) => {
             const id = eventArray[0]
