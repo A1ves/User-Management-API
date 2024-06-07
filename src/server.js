@@ -1,5 +1,5 @@
 import { fastify } from 'fastify'
-import { DatabaseMemoryUser } from './database-memory'
+import { DatabaseMemoryUser } from './database-memory.js'
 
 const server = fastify()
 const database = new DatabaseMemoryUser()
@@ -33,13 +33,10 @@ server.post('/api/auth/login', (request, reply) => {
     }
 })
 
-server.post('/', () => {
-    
+server.get('/ping', () => {
+    console.log("pong")
 })
 
-server.post('/', () => {
-    
-})
 
 server.listen({
     port:3333
