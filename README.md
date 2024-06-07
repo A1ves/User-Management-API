@@ -1,11 +1,11 @@
 # User Management API
 
 ## Descrição
-Este projeto é uma API de Cadastro de Usuários que fornece operações completas de CRUD (Create, Read, Update, Delete) para gerenciar usuários. A API foi desenvolvida utilizando Node.js com o framework Express e banco de dados PostgreSQL. As funcionalidades incluem validação de dados, autenticação JWT e encriptação de senhas com bcrypt.
+Este projeto é uma API de Cadastro de Usuários que fornece operações completas de CRUD (Create, Read, Update, Delete) para gerenciar usuários. A API foi desenvolvida utilizando Node.js com o framework Fastify e banco de dados PostgreSQL. As funcionalidades incluem validação de dados, autenticação JWT e encriptação de senhas com bcrypt.
 
 ## Tecnologias Utilizadas
 - Node.js
-- Express
+- Fastify
 - PostgreSQL
 - JWT (JSON Web Token)
 - bcrypt
