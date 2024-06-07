@@ -2,7 +2,11 @@ import { fastify } from 'fastify'
 import { DatabaseMemoryUser } from './database-memory.js'
 import jwt from 'jsonwebtoken'
 
-const secretKey = 'ayron'
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+require('dotenv').config
+
+const secretKey = process.env.SECRET_KEY
 const server = fastify()
 const database = new DatabaseMemoryUser()
 
