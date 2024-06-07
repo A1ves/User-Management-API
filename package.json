@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^4.27.0"
+    "bcrypt": "^5.1.1",
+    "fastify": "^4.27.0",
+    "jsonwebtoken": "^9.0.2"
   }
 }
