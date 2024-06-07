@@ -1,0 +1,17 @@
+{
+  "name": "user-management-api",
+  "version": "1.0.0",
+  "description": "## Descrição Este projeto é uma API de Cadastro de Usuários que fornece operações completas de CRUD (Create, Read, Update, Delete) para gerenciar usuários. A API foi desenvolvida utilizando Node.js com o framework Express e banco de dados PostgreSQL. As funcionalidades incluem validação de dados, autenticação JWT e encriptação de senhas com bcrypt.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch --no-warnings src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.27.0"
+  }
+}
