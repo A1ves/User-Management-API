@@ -33,8 +33,8 @@ server.post('/api/auth/login', (request, reply) => {
     }
 })
 
-server.get('/ping', () => {
-    console.log("pong")
+server.get('/api/auth/users', (request, reply) => {
+    return reply.status(200).send(database.list())
 })
 
 

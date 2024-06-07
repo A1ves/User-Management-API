@@ -18,7 +18,15 @@ export class DatabaseMemoryUser {
     }
 
     list(){
+        return Array.from(this.#users.entries()).map((eventArray) => {
+            const id = eventArray[0]
+            const data = eventArray[1]
 
+            return {
+                id,
+                ...data,
+            }
+        })
     }
 
     update(user, password){
